@@ -2,7 +2,8 @@ import React from "react";
 import "./sidebar.css";
 import SidebarButton from "./sidebarButton";
 import { MdFavorite } from "react-icons/md";
-import { MdSpaceDashboard } from "react-icons/md";
+import { FaSearch } from "react-icons/fa";
+// import { MdSpaceDashboard } from "react-icons/md";
 import { FaGripfire } from "react-icons/fa";
 import { FaSignInAlt } from "react-icons/fa";
 import { FaPlay } from "react-icons/fa";
@@ -17,7 +18,7 @@ export default function Sidebar() {
         alt="profile"
       />
       <div>
-        <SidebarButton title="Feed" to="/feed" icon={<MdSpaceDashboard/>}/>
+        <SidebarButton title="Search" to="/search" icon={<FaSearch />}/>
         <SidebarButton title="Trending" to="/trending" icon={<FaGripfire/>}/>
         <SidebarButton title="Player" to="/player" icon={<FaPlay/>}/>
         <SidebarButton title="Favourites" to="/favourites" icon={<MdFavorite/>}/>
